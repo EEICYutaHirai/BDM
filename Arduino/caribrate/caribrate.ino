@@ -13,6 +13,12 @@ void setup() {
   //初期状態では何も載せてはいけない
   scale.set_scale();
   scale.tare();
+
+  Serial.println("Put something");
+  delay(5000);
+  double value = sclale.get_units(10);
+  scale.set_scale(value/500.);
+  
 }
 
 void loop() {
