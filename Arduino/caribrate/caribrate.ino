@@ -1,9 +1,9 @@
-#include "HxX711.h"
+#include "HX711.h"
 
 HX711 scale;
 
-//const int A1 = //DAT
-//const int A0 = //CLK(たぶんSCK_PIN)
+//const int A1 = 14;//DAT
+//const int A0 = PIN_A0;//CLK(たぶんSCK_PIN)
 
 void setup() {
   // put your setup code here, to run once:
@@ -22,6 +22,6 @@ void loop() {
   //今回はグラムを単位としよう
   //この割った値を、以後常にscale.set_scaleの引数に入れる必要がある。
   //きゃりぶれーとすると, get_unit(n) で重さがわかる。nは直近何回の平均を取るか。
-  Serial.println(scale.get_unit(10));
+  Serial.println(scale.get_units(10));
   delay(1000);
 }
