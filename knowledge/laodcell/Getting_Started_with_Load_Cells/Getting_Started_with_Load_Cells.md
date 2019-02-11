@@ -16,3 +16,7 @@
 >https://github.com/bogde/HX711
 
 ここにライブラリがある。
+
+## HX711 の配線の仕方
+
+>https://learn.sparkfun.com/tutorials/load-cell-amplifier-hx711-breakout-hookup-guide
